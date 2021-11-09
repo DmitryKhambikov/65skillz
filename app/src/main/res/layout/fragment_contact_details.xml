@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contactDetailLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/my_border2">
+    tools:context=".ContactDetailsFragment">
+
+
+    <ImageView
+        android:id="@+id/contactImage2"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/my_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <TextView
+        android:id="@+id/contactName2"
+        android:name="dgfdg"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/my_border"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Dmitry Khambikov"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contactImage2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contactNum1"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/my_border"
+        android:gravity="center_vertical"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:text="Телефон"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactName2" />
+
+    <TextView
+        android:id="@+id/contactNum2"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/my_border"
+        android:gravity="center_vertical"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:text="Телефон 2"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/contactNum1"
+        app:layout_constraintStart_toStartOf="@+id/contactNum1"
+        app:layout_constraintTop_toBottomOf="@+id/contactNum1" />
+
+    <TextView
+        android:id="@+id/contactMail"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/my_border"
+        android:gravity="center_vertical"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:text="e-mail"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/contactNum2"
+        app:layout_constraintStart_toStartOf="@+id/contactNum2"
+        app:layout_constraintTop_toBottomOf="@+id/contactNum2" />
+
+    <TextView
+        android:id="@+id/contactMail2"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/my_border"
+        android:gravity="center_vertical"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:text="e-mail 2"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/contactMail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/contactMail"
+        app:layout_constraintTop_toBottomOf="@+id/contactMail" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="298dp"
+        android:background="@drawable/my_border"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/contactMail2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/contactMail2"
+        app:layout_constraintTop_toBottomOf="@+id/contactMail2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
